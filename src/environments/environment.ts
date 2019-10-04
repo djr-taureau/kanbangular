@@ -4,15 +4,16 @@
 
 export const environment = {
   production: false,
-  firebase:  {
-    apiKey: 'AIzaSyAKlEX5a8PQaadYNSrohqfl33O37Kjkv1Y',
-    authDomain: 'angular-voxer.firebaseapp.com',
-    databaseURL: 'https://angular-voxer.firebaseio.com',
-    projectId: 'angular-voxer',
-    storageBucket: 'angular-voxer.appspot.com',
-    messagingSenderId: '122050526979',
-    appId: '1:122050526979:web:529304dce5ffca7a'
-  }
+  firebase: {
+    apiKey: "AIzaSyBKrcDa7PNTu1GE-CKhn-qtjQ3BUIUxdjQ",
+    authDomain: "kanbangular-7c216.firebaseapp.com",
+    databaseURL: "https://kanbangular-7c216.firebaseio.com",
+    projectId: "kanbangular-7c216",
+    storageBucket: "kanbangular-7c216.appspot.com",
+    messagingSenderId: "829764773965",
+    appId: "1:829764773965:web:a7f0fea923c35611225404",
+    measurementId: "G-BEX0NHETF9",
+  },
 };
 
 /*
