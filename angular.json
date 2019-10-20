@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "firestarter": {
+    "kanbangular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -70,18 +70,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "firestarter:build"
+            "browserTarget": "kanbangular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "firestarter:build:production"
+              "browserTarget": "kanbangular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "firestarter:build"
+            "browserTarget": "kanbangular:build"
           }
         },
         "test": {
@@ -119,11 +119,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "firestarter:serve"
+            "devServerTarget": "kanbangular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "firestarter:serve:production"
+              "devServerTarget": "kanbangular:serve:production"
             }
           }
         },
@@ -148,5 +148,5 @@
       }
     }
   },
-  "defaultProject": "firestarter"
+  "defaultProject": "kanbangular"
 }

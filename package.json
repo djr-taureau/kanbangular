@@ -1,5 +1,5 @@
 {
-  "name": "firestarter",
+  "name": "kanbangular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -12,7 +12,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run firestarter:server:production",
+    "build:client-and-server-bundles": "ng build --prod && ng run kanbangular:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && node prerender.js",
     "serve:prerender": "http-server dist/browser -c-1"
   },
