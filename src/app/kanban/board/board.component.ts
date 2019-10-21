@@ -1,14 +1,14 @@
-import { Component, Input } from '@angular/core';
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { TaskDialogComponent } from '../dialogs/task-dialog.component';
-import { MatDialog } from '@angular/material/dialog';
-import { BoardService } from '../board.service';
-import { Task } from '../board.model';
+import { Component, Input } from "@angular/core";
+import { CdkDragDrop, moveItemInArray } from "@angular/cdk/drag-drop";
+import { TaskDialogComponent } from "../dialogs/task-dialog.component";
+import { MatDialog } from "@angular/material/dialog";
+import { BoardService } from "../board.service";
+import { Task } from "../board.model";
 
 @Component({
-  selector: 'app-board',
-  templateUrl: './board.component.html',
-  styleUrls: ['./board.component.scss']
+  selector: "app-board",
+  templateUrl: "./board.component.html",
+  styleUrls: ["./board.component.scss"]
 })
 export class BoardComponent {
   @Input() board;
@@ -19,9 +19,9 @@ export class BoardComponent {
   }
 
   openDialog(task?: Task, idx?: number): void {
-    const newTask = { label: 'purple' };
+    const newTask = { label: "purple" };
     const dialogRef = this.dialog.open(TaskDialogComponent, {
-      width: '500px',
+      width: "500px",
       data: task
         ? { task: { ...task }, isNew: false, boardId: this.board.id, idx }
         : { task: newTask, isNew: true }
